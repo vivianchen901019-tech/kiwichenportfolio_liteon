@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>陳琪薇 Kiwi Chen | 數位作品集</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind = window.tailwind || {};
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { 'deep-blue': '#003366', 'tech-blue': '#00A3E0' },
+          fontFamily: { sans: ['Inter', 'Noto Sans TC', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { scroll-behavior: smooth; }
+    section { scroll-margin-top: 5rem; }
+    .metric-card { border-left: 4px solid #00A3E0; transition: transform 0.3s; }
+    .metric-card:hover { transform: translateY(-5px); }
+    .link-hover { transition: all 0.3s; border-bottom: 2px solid transparent; }
+    .link-hover:hover { color: #00A3E0; border-bottom: 2px solid #00A3E0; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <header class="fixed inset-x-0 top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+      <div class="font-bold text-deep-blue text-xl tracking-tight">Kiwi Chen</div>
+      <nav class="hidden md:flex space-x-8 text-sm font-medium">
+        <a href="#about" class="hover:text-tech-blue transition-colors">核心價值</a>
+        <a href="#portfolio" class="hover:text-tech-blue transition-colors">專案實績</a>
+        <a href="#abc" class="hover:text-tech-blue transition-colors">ABC特質</a>
+        <a href="#closing" class="hover:text-tech-blue transition-colors">即戰力</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="pt-24 pb-20">
+    <section id="about" class="max-w-6xl mx-auto px-4 mb-20 text-center">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-deep-blue mb-6">陳琪薇 Kiwi Chen</h1>
+      <p class="text-xl text-gray-600 mb-10 max-w-3xl mx-auto">具備推動產品從 0 到 1 落地、數據驅動決策力，以及問題解決能力。</p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="metric-card bg-white p-6 shadow-md">
+          <div class="text-4xl font-black text-deep-blue mb-2">650%</div>
+          <div class="text-gray-500 font-bold uppercase tracking-widest text-xs">Organic Growth</div>
+        </div>
+        <div class="metric-card bg-white p-6 shadow-md">
+          <div class="text-4xl font-black text-deep-blue mb-2">+133.85%</div>
+          <div class="text-gray-500 font-bold uppercase tracking-widest text-xs">Revenue Increase</div>
+        </div>
+        <div class="metric-card bg-white p-6 shadow-md">
+          <div class="text-4xl font-black text-deep-blue mb-2">122 Days</div>
+          <div class="text-gray-500 font-bold uppercase tracking-widest text-xs">0 to 1 Launch</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="abc" class="bg-deep-blue py-16 text-white mb-20">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-12">Core Values: ABC 特質</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+          <div class="border border-white/20 p-8 rounded-lg bg-white/5">
+            <h3 class="text-tech-blue font-bold text-xl mb-4">Accountability (技術攻堅)</h3>
+            <p class="text-gray-300">在台積電講座專案中擔任主 PM，負責客戶對接、講座企劃、跨部門合作溝通與成本控管，確保 100% 成果交付。</p>
+          </div>
+          <div class="border border-white/20 p-8 rounded-lg bg-white/5">
+            <h3 class="text-tech-blue font-bold text-xl mb-4">Boldness (數據驅動)</h3>
+            <p class="text-gray-300">勇於改變現狀，根據 GA4 數據大膽調整行銷視覺與策略，在活動後期精準逆轉業績。</p>
+          </div>
+          <div class="border border-white/20 p-8 rounded-lg bg-white/5">
+            <h3 class="text-tech-blue font-bold text-xl mb-4">Challenge (業績突破)</h3>
+            <p class="text-gray-300">追求卓越成長，透過跨渠道優化與流程再造，帶動訂單量翻倍，將挑戰轉化為具體的商業營收。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="max-w-6xl mx-auto px-4 space-y-24">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <img src="images/project-a.jpg" alt="遠見線上讀" class="rounded-xl shadow-lg w-full h-auto object-cover bg-gray-200">
+        </div>
+        <div>
+          <span class="text-tech-blue font-bold tracking-tighter uppercase text-sm">0 to 1 Product Development</span>
+          <h3 class="text-3xl font-bold text-deep-blue mt-2 mb-4">
+            <a href="https://www.gvm.com.tw/digital" target="_blank" class="link-hover">《遠見線上讀》全新數位上市計畫</a>
+          </h3>  
+          <p class="text-gray-600 mb-6 font-semibold">數位產品專案管理，122 天完成從開發到上市全週期。</p>
+          <ul class="space-y-3 text-sm text-gray-700">
+            <li class="flex items-start">
+              <span class="text-tech-blue mr-2 font-bold shrink-0">✓</span> 
+              <p><strong>跨域協調：</strong>橫向協作資訊部、設計與客服中心，有效推進進程，使數位商品如期上線。</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-tech-blue mr-2 font-bold shrink-0">✓</span> 
+              <p><strong>商模定義：</strong>執行競品分析與定價策略，為社長(CEO)提供商業決策依據。</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="order-last md:order-first">
+          <span class="text-tech-blue font-bold tracking-tighter uppercase text-sm">Agile Marketing</span>
+          <h3 class="text-3xl font-bold text-deep-blue mt-2 mb-4">
+            <a href="https://event.gvm.com.tw/2025_tibe/" target="_blank" class="link-hover">2025 線上書展</a>
+          </h3>
+          <p class="text-gray-600 mb-6 font-semibold">達成 20.77% 業績成長的數據敏捷實驗。</p>
+          <ul class="space-y-3 text-sm text-gray-700">
+            <li class="flex items-start">
+              <span class="text-tech-blue mr-2 font-bold shrink-0">✓</span>
+              <p><strong>全權主導：</strong>獨立完成行銷企劃、數位資源布局與執行。</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-tech-blue mr-2 font-bold shrink-0">✓</span>
+              <p><strong>動態調整：</strong>分析購買輪廓後，果斷更換為女性視角《悅讀·悅己·悅世界》視覺，助力最後衝刺。</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <img src="images/project-b.jpg" alt="線上書展" class="rounded-xl shadow-lg w-full h-auto object-cover bg-gray-200">
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <img src="images/project-c.jpg" alt="週年慶" class="rounded-xl shadow-lg w-full h-auto object-cover bg-gray-200">
+        </div>
+        <div>
+          <span class="text-tech-blue font-bold tracking-tighter uppercase text-sm">Performance Growth</span>
+          <h3 class="text-3xl font-bold text-deep-blue mt-2 mb-4">
+            <a href="https://event.gvm.com.tw/2024gvanniversary/" target="_blank" class="link-hover">遠見 38 週年慶</a>
+          </h3>
+          <p class="text-gray-600 mb-6 font-semibold">業績成長 133.85% 的全渠道布局。</p>
+          <ul class="space-y-3 text-sm text-gray-700">
+            <li class="flex items-start">
+              <span class="text-tech-blue mr-2 font-bold shrink-0">✓</span>
+              <p><strong>工具整合：</strong>運用 Facebook Ads、Google Ads、eDM 與 Salesforce 進行漏斗溝通。</p>
+            </li>
+            <li class="flex items-start">
+              <span class="text-tech-blue mr-2 font-bold shrink-0">✓</span>
+              <p><strong>精準複盤：</strong>分析訂單來源並產出改善建議，提供未來進步建議與成功策略。</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="order-last md:order-first">
+          <span class="text-tech-blue font-bold tracking-tighter uppercase text-sm">Technical Problem Solving</span>
+          <h3 class="text-3xl font-bold text-deep-blue mt-2 mb-4">台積電實體講座</h3>
+          <p class="text-gray-600 mb-6 font-semibold">解決 300 人現場與各廠區直播的技術限制。</p>
+          <ul class="space-y-4 text-sm text-gray-700">
+            <li class="flex items-start"><span class="text-tech-blue mr-2 font-bold shrink-0">●</span> <strong>情境Situation：</strong> 資安規範嚴格，禁止連接網路且接口封裝，直播軟體授權困難。</li>
+            <li class="flex items-start"><span class="text-tech-blue mr-2 font-bold shrink-0">●</span> <strong>Action：</strong> 與工程師密切討論，找出直播線路串接、軟體驗證解決方案。</li>
+            <li class="flex items-start"><span class="text-tech-blue mr-2 font-bold shrink-0">✓</span> <strong>Result：</strong> 活動順利執行，滿意度達 4.5/5 分。</li>
+          </ul>
+        </div>
+        <div>
+          <img src="images/project-d.jpg" alt="台積電講座" class="rounded-xl shadow-lg w-full h-auto object-cover bg-gray-200">
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <img src="images/project-e.jpg" alt="基隆塔專案" class="rounded-xl shadow-lg w-full h-auto object-cover bg-gray-200">
+        </div>
+        <div>
+          <span class="text-tech-blue font-bold tracking-tighter uppercase text-sm">Content Influence</span>
+          <h3 class="text-3xl font-bold text-deep-blue mt-2 mb-4">基隆塔閱讀推廣：頂尖講者與內容經營</h3>
+          <p class="text-gray-600 mb-6 font-semibold">邀請沈春華、賴佩霞、凌宗湧、劉若瑀等重磅講者。</p>
+          <ul class="space-y-3 text-sm text-gray-700">
+            <li class="flex items-start">
+              <span class="text-tech-blue mr-2 font-bold shrink-0">✓</span> 
+              <p><strong>流量成長：</strong> 
+                <a href="https://www.gvm.com.tw/article/126779" target="_blank" class="text-tech-blue font-bold hover:underline">
+                  撰寫活動會後報導，6 天內達成 6,500+ PV（成長 650%）
+                </a>。
+              </p>
+            </li>
+            <li class="flex items-start"><span class="text-tech-blue mr-2 font-bold shrink-0">✓</span> <p><strong>會後影響：</strong> 有效轉化講者影響力，單場短影音最高觀看突破 20 萬次。</p></li>
+            <li class="flex items-start"><span class="text-tech-blue mr-2 font-bold shrink-0">✓</span> <p><strong>超額達成：</strong> 每場均成功吸引 130+ 位讀者報名參與（原場地上限僅 80 人）。</p></li>
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="closing" class="max-w-4xl mx-auto px-4 mt-32 text-center bg-white border border-gray-100 py-16 rounded-3xl shadow-xl">
+      <h2 class="text-3xl font-bold text-deep-blue mb-8">戰力總結</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm mb-10 text-left px-8">
+        <div class="bg-gray-50 p-6 rounded-xl border-t-4 border-tech-blue">
+          <div class="font-bold text-deep-blue mb-2 text-lg">數據與技術賦能</div>
+          <p class="text-gray-600">擅長 GA4、Excel、Salesforce，並具備與 IT 部門深度對接技術需求之實戰經驗。</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl border-t-4 border-tech-blue">
+          <div class="font-bold text-deep-blue mb-2 text-lg">高效溝通與交付</div>
+          <p class="text-gray-600">具備與重磅講者、企業高階 (CEO) 與大型品牌 (TSMC) 的溝通合作與成果交付力。</p>
+        </div>
+      </div>
+      <p class="text-gray-600 italic">"我將以數據導向的決策力與高標準的執行力，為光寶創造實質商業價值。"</p>
+    </section>
+  </main>
+
+  <footer id="contact" class="bg-white border-t py-12">
+    <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+      <div class="text-deep-blue font-bold text-xl mb-4 md:mb-0">陳琪薇 Kiwi Chen</div>
+      <div class="flex space-x-6 text-sm">
+        <a href="mailto:vivianchen901019@gmail.com" class="text-gray-500 hover:text-tech-blue transition-colors">vivianchen901019@gmail.com</a>
+        <a href="https://www.linkedin.com/in/chi-wei-chen-4bb80a262/" target="_blank" class="text-gray-500 hover:text-tech-blue transition-colors">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
